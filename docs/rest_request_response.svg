@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+  </defs>
+  <rect width="900" height="520" fill="#ffffff"/>
+  <text x="450" y="40" text-anchor="middle" font-size="24" font-weight="700" fill="#222">Anatomy of a REST Request &amp; Response</text>
+
+  <!-- Request -->
+  <rect x="30" y="70" width="400" height="420" rx="14" fill="#eef6ff" stroke="#4a90d9" stroke-width="2"/>
+  <text x="230" y="100" text-anchor="middle" font-size="18" font-weight="700" fill="#1f5f9e">HTTP REQUEST (client → server)</text>
+
+  <rect x="50" y="120" width="360" height="70" rx="8" fill="#a8e6a1" stroke="#3c9a35"/>
+  <text x="65" y="145" font-size="14" font-weight="700" fill="#1e5a19">1. Request line</text>
+  <text x="65" y="174" font-size="15" font-family="Consolas, monospace" fill="#222">POST /users?notify=true HTTP/1.1</text>
+
+  <rect x="50" y="205" width="360" height="110" rx="8" fill="#fff3c4" stroke="#c9a227"/>
+  <text x="65" y="230" font-size="14" font-weight="700" fill="#7a5c00">2. Headers (metadata)</text>
+  <text x="65" y="257" font-size="14" font-family="Consolas, monospace" fill="#222">Host: localhost:8000</text>
+  <text x="65" y="280" font-size="14" font-family="Consolas, monospace" fill="#222">Content-Type: application/json</text>
+  <text x="65" y="303" font-size="14" font-family="Consolas, monospace" fill="#222">Authorization: Bearer eyJhb...</text>
+
+  <rect x="50" y="330" width="360" height="140" rx="8" fill="#ffe0d6" stroke="#d9694a"/>
+  <text x="65" y="355" font-size="14" font-weight="700" fill="#8a2f14">3. Body (the data, JSON)</text>
+  <text x="65" y="385" font-size="14" font-family="Consolas, monospace" fill="#222">{</text>
+  <text x="85" y="408" font-size="14" font-family="Consolas, monospace" fill="#222">"name": "Anirudh",</text>
+  <text x="85" y="431" font-size="14" font-family="Consolas, monospace" fill="#222">"role": "data engineer"</text>
+  <text x="65" y="454" font-size="14" font-family="Consolas, monospace" fill="#222">}</text>
+
+  <!-- Arrows -->
+  <line x1="435" y1="230" x2="465" y2="230" stroke="#444" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="465" y1="330" x2="435" y2="330" stroke="#444" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Response -->
+  <rect x="470" y="70" width="400" height="420" rx="14" fill="#f3ecff" stroke="#8a5cd1" stroke-width="2"/>
+  <text x="670" y="100" text-anchor="middle" font-size="18" font-weight="700" fill="#5a2fa0">HTTP RESPONSE (server → client)</text>
+
+  <rect x="490" y="120" width="360" height="70" rx="8" fill="#a8e6a1" stroke="#3c9a35"/>
+  <text x="505" y="145" font-size="14" font-weight="700" fill="#1e5a19">1. Status line</text>
+  <text x="505" y="174" font-size="15" font-family="Consolas, monospace" fill="#222">HTTP/1.1 201 Created</text>
+
+  <rect x="490" y="205" width="360" height="110" rx="8" fill="#fff3c4" stroke="#c9a227"/>
+  <text x="505" y="230" font-size="14" font-weight="700" fill="#7a5c00">2. Headers (metadata)</text>
+  <text x="505" y="257" font-size="14" font-family="Consolas, monospace" fill="#222">Content-Type: application/json</text>
+  <text x="505" y="280" font-size="14" font-family="Consolas, monospace" fill="#222">Location: /users/42</text>
+  <text x="505" y="303" font-size="14" font-family="Consolas, monospace" fill="#222">server: uvicorn</text>
+
+  <rect x="490" y="330" width="360" height="140" rx="8" fill="#ffe0d6" stroke="#d9694a"/>
+  <text x="505" y="355" font-size="14" font-weight="700" fill="#8a2f14">3. Body (the resource, JSON)</text>
+  <text x="505" y="385" font-size="14" font-family="Consolas, monospace" fill="#222">{</text>
+  <text x="525" y="408" font-size="14" font-family="Consolas, monospace" fill="#222">"id": 42,</text>
+  <text x="525" y="431" font-size="14" font-family="Consolas, monospace" fill="#222">"name": "Anirudh"</text>
+  <text x="505" y="454" font-size="14" font-family="Consolas, monospace" fill="#222">}</text>
+</svg>

@@ -1,0 +1,6 @@
+myenv/
+__pycache__/
+*.pyc
+
+# Local DB credentials - do not commit
+DBproperties.txt

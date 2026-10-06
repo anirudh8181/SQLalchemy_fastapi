@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="900" height="470" fill="#ffffff"/>
+  <text x="450" y="40" text-anchor="middle" font-size="24" font-weight="700" fill="#222">One Resource, Many Actions: HTTP Methods ↔ CRUD</text>
+
+  <!-- Column headers -->
+  <text x="110" y="85" text-anchor="middle" font-size="15" font-weight="700" fill="#555">HTTP METHOD</text>
+  <text x="340" y="85" text-anchor="middle" font-size="15" font-weight="700" fill="#555">URL (resource)</text>
+  <text x="575" y="85" text-anchor="middle" font-size="15" font-weight="700" fill="#555">CRUD action</text>
+  <text x="780" y="85" text-anchor="middle" font-size="15" font-weight="700" fill="#555">Typical status</text>
+
+  <!-- Row: GET list -->
+  <rect x="40" y="100" width="140" height="48" rx="8" fill="#61affe"/>
+  <text x="110" y="131" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">GET</text>
+  <text x="340" y="131" text-anchor="middle" font-size="16" font-family="Consolas, monospace" fill="#222">/users</text>
+  <line x1="190" y1="124" x2="250" y2="124" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+  <text x="575" y="131" text-anchor="middle" font-size="16" fill="#222">Read all users</text>
+  <text x="780" y="131" text-anchor="middle" font-size="16" fill="#2e7d32" font-weight="700">200 OK</text>
+
+  <!-- Row: GET one -->
+  <rect x="40" y="160" width="140" height="48" rx="8" fill="#61affe"/>
+  <text x="110" y="191" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">GET</text>
+  <text x="340" y="191" text-anchor="middle" font-size="16" font-family="Consolas, monospace" fill="#222">/users/42</text>
+  <line x1="190" y1="184" x2="250" y2="184" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+  <text x="575" y="191" text-anchor="middle" font-size="16" fill="#222">Read one user</text>
+  <text x="780" y="191" text-anchor="middle" font-size="16" fill="#2e7d32" font-weight="700">200 / 404</text>
+
+  <!-- Row: POST -->
+  <rect x="40" y="220" width="140" height="48" rx="8" fill="#49cc90"/>
+  <text x="110" y="251" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">POST</text>
+  <text x="340" y="251" text-anchor="middle" font-size="16" font-family="Consolas, monospace" fill="#222">/users</text>
+  <line x1="190" y1="244" x2="250" y2="244" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+  <text x="575" y="251" text-anchor="middle" font-size="16" fill="#222">Create a user</text>
+  <text x="780" y="251" text-anchor="middle" font-size="16" fill="#2e7d32" font-weight="700">201 Created</text>
+
+  <!-- Row: PUT -->
+  <rect x="40" y="280" width="140" height="48" rx="8" fill="#fca130"/>
+  <text x="110" y="311" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">PUT</text>
+  <text x="340" y="311" text-anchor="middle" font-size="16" font-family="Consolas, monospace" fill="#222">/users/42</text>
+  <line x1="190" y1="304" x2="250" y2="304" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+  <text x="575" y="311" text-anchor="middle" font-size="16" fill="#222">Replace whole user</text>
+  <text x="780" y="311" text-anchor="middle" font-size="16" fill="#2e7d32" font-weight="700">200 OK</text>
+
+  <!-- Row: PATCH -->
+  <rect x="40" y="340" width="140" height="48" rx="8" fill="#50e3c2"/>
+  <text x="110" y="371" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">PATCH</text>
+  <text x="340" y="371" text-anchor="middle" font-size="16" font-family="Consolas, monospace" fill="#222">/users/42</text>
+  <line x1="190" y1="364" x2="250" y2="364" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+  <text x="575" y="371" text-anchor="middle" font-size="16" fill="#222">Update some fields</text>
+  <text x="780" y="371" text-anchor="middle" font-size="16" fill="#2e7d32" font-weight="700">200 OK</text>
+
+  <!-- Row: DELETE -->
+  <rect x="40" y="400" width="140" height="48" rx="8" fill="#f93e3e"/>
+  <text x="110" y="431" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">DELETE</text>
+  <text x="340" y="431" text-anchor="middle" font-size="16" font-family="Consolas, monospace" fill="#222">/users/42</text>
+  <line x1="190" y1="424" x2="250" y2="424" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+  <text x="575" y="431" text-anchor="middle" font-size="16" fill="#222">Delete the user</text>
+  <text x="780" y="431" text-anchor="middle" font-size="16" fill="#2e7d32" font-weight="700">204 No Content</text>
+</svg>
